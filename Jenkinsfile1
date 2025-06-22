@@ -6,7 +6,11 @@ pipeline {
                 echo 'Building the application...'
                 // Example build command
                 //sh './build.sh'
-          
+
+go mod init wordsmith
+                    go mod tidy
+                    go build
+                ...
             }
         }
     }
