@@ -8,7 +8,6 @@ pipeline {
                 //sh './build.sh'
                 sh '''
                     
-                    go mod init wordsmith
                     go mod tidy
                     go build
                 '''
