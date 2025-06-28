@@ -17,15 +17,13 @@ pipeline {
         stage('test') {
             steps {
                 echo 'Building the application...'
-                // Example build command
-                //sh './build.sh'
                 sh '''
                     
-                    sonar-scanner \
-                       -Dsonar.projectKey=worthsmithfrontend \
-                      -Dsonar.sources=. \
-                      -Dsonar.host.url=http://3.96.157.71:9000 \
-                      -Dsonar.login=049114c897c840b3e92c2296fdcab6ff14a18a69
+               sonar-scanner \
+              -Dsonar.projectKey=worthsmithfrontend \
+              -Dsonar.sources=. \
+              -Dsonar.host.url=http://3.99.133.190:9000 \
+              -Dsonar.login=7adc15609074d6a1bafde2cf1f5631ce6ff37752
                 '''
             }
         }
